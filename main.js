@@ -17,4 +17,26 @@ const bagiSayaCatatanIniTidakPenting = false;
 console.log (bagiSayaCatatanIniPenting);
 console.log (bagiSayaCatatanIniTidakPenting);
 
+// Object literal
+const data = {
+    folder: "catatan",
+    alamat: {
+        jalan: "Jl. Web browser",
+        "rt/rw": "04/04"
+    },
+    fungsi: [
+        "image and video free",
+        "free illustration",
+        "fonts and icons",
+        "design and mockup"
+    ]
+};
 
+console.log(data.folder)
+console.log(data["alamat"]["rt/rw"])
+console.log(data.alamat["rt/rw"])
+
+// Array di dalam Object
+data.fungsi.forEach(function(item) {
+    console.log(`${item} termasuk list dalam ${data.folder}`)
+}) 
