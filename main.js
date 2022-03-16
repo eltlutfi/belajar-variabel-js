@@ -40,3 +40,29 @@ console.log(data.alamat["rt/rw"])
 data.fungsi.forEach(function(item) {
     console.log(`${item} termasuk list dalam ${data.folder}`)
 }) 
+
+// Array literal
+const freeImages = ["unsplash.com", "pexels.com", "pixabay.com"];
+
+// Array with multiple lines
+const freeIllustration = [
+    "unDraw",
+    "usesmash",
+    "freepik"
+];
+
+// Array with new keyword
+const fontsAndIcons = new Array("google font", "flaticon", "fontawesome");
+console.log(freeImages) 
+console.log(freeIllustration.length)
+
+// Array push
+const designAndMockup = ["figma", "adobe xd", "wireframe"]
+designAndMockup.push("mockuphone")
+
+console.log(designAndMockup) 
+
+// Array pop
+const imageUtilities = ["squoosh.app", "remove.bg", "saus abc"]
+imageUtilities.pop()
+console.log(imageUtilities)
